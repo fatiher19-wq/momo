@@ -1,0 +1,107 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 300px;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 10px;
+      display: block;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    .category {
+      font-size: 16px;
+      color: #777;
+      margin: 0 0 20px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      padding: 10px 15px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    h1.page-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    ul.menu-list li {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+    }
+
+    ul.menu-list li p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 480px) {
+      nav a {
+        font-size: 13px;
+        padding: 8px 10px;
+      }
+      .brand {
+        font-size: 20px;
+      }
+      .category {
+        font-size: 14px;
+      }
+      h1.page-title {
+        font-size: 24px;
+      }
+      ul.menu-list li {
+        font-size: 14px;
+      }
+    }
+  body
+{
+   background-color: transparent;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
