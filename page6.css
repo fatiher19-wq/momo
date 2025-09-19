@@ -72,6 +72,7 @@
       background: #fafafa;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       font-size: 18px;
+      justify-content: space-between;
     }
 
     ul.menu-list li img {
@@ -80,6 +81,20 @@
       object-fit: cover;
       border-radius: 8px;
       flex-shrink: 0;
+    }
+
+    .item-info {
+      flex: 1;
+    }
+
+    .item-name {
+      font-weight: bold;
+      display: block;
+    }
+
+    .item-price {
+      color: #444;
+      font-size: 16px;
     }
 
     @media (max-width: 480px) {
@@ -99,10 +114,15 @@
       ul.menu-list li {
         font-size: 16px;
         padding: 12px;
+        flex-direction: column;
+        align-items: flex-start;
       }
       ul.menu-list li img {
         width: 60px;
         height: 60px;
+      }
+      .item-info {
+        width: 100%;
       }
     }
   body
