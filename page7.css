@@ -72,6 +72,7 @@
       background: #fafafa;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       font-size: 18px;
+      justify-content: space-between;
     }
 
     ul.menu-list li img {
@@ -82,24 +83,44 @@
       flex-shrink: 0;
     }
 
+    .item-info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-name {
+      font-weight: bold;
+    }
+
+    .item-price {
+      color: #555;
+      margin-top: 5px;
+    }
+
     @media (max-width: 480px) {
       nav a {
         font-size: 13px;
         padding: 8px 10px;
       }
+
       .brand {
         font-size: 20px;
       }
+
       .category {
         font-size: 14px;
       }
+
       h1.page-title {
         font-size: 24px;
       }
+
       ul.menu-list li {
         font-size: 16px;
         padding: 12px;
       }
+
       ul.menu-list li img {
         width: 60px;
         height: 60px;
