@@ -32,17 +32,17 @@
     <li>
       <img src="WhatsApp Image 2025-09-12 at 18.57.32.jpeg" alt="Suffle" />
       <span>Suffle</span>
-      <p>205 ₺ + dondurma 50 ₺</p>
+      <p>250 ₺ + dondurma 50 ₺</p>
     </li>
     <li>
       <img src="WhatsApp Image 2025-09-12 at 19.02.38.jpeg" alt="Limonlu Cheesecake" />
       <span>Limonlu Cheesecake</span>
-      <p>195 ₺</p>
+      <p>205 ₺</p>
     </li>
     <li>
       <img src="WhatsApp Image 2025-09-12 at 19.02.38 (1).jpeg" alt="Lotuslu Cheesecake" />
       <span>Lotuslu Cheesecake</span>
-      <p>195 ₺</p>
+      <p>205 ₺</p>
     </li>
     <li>
       <img src="WhatsApp Image 2025-09-12 at 19.02.39.jpeg" alt="Gökkuşağı" />
@@ -77,17 +77,17 @@
     <li>
       <img src="WhatsApp Image 2025-09-12 at 19.02.40.jpeg" alt="Fıstıklı Volcano" />
       <span>Fıstıklı Volcano</span>
-      <p>240 ₺</p>
+      <p>250 ₺</p>
     </li>
     <li>
       <img src="WhatsApp Image 2025-09-12 at 19.02.40 (1).jpeg" alt="Tramisu Volcano" />
       <span>Tramisu Volcano</span>
-      <p>240 ₺</p>
+      <p>250 ₺</p>
     </li>
     <li>
       <img src="WhatsApp Image 2025-09-12 at 19.02.40 (2).jpeg" alt="Meyveli Volcano" />
       <span>Meyveli Volcano</span>
-      <p>240 ₺</p>
+      <p>250 ₺</p>
     </li>
     <li>
       <img src="WhatsApp Image 2025-09-12 at 19.02.40 (3).jpeg" alt="Dubai Çikolatalı Mono" />
@@ -113,6 +113,65 @@
 
 </body>
 </html>
+
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.product img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #d1b275;
+  box-shadow: 1px 1px 3px #d1b27588;
+}
+
+.product h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #8b5e00;
+}
+
+.product p {
+  margin: 0;
+  font-weight: 600;
+  color: #b36e00;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 2rem;
+}
+
+footer a {
+  color: #b36e00;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f0c080;
+}
+
+/* Mobil Uyum */
+@media (max-width: 600px) {
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+}
 <!doctype html>
 <html>
 <head>
