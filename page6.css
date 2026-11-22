@@ -54,34 +54,41 @@
       margin-bottom: 20px;
     }
 
-    ul.menu-list {
-      list-style: none;
-      padding: 0;
+    .menu-section {
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 25px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fafafa;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
       text-align: left;
     }
 
-    ul.menu-list li {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: #fafafa;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      font-size: 17px;
-      justify-content: space-between;
+    .section-banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
     }
 
-    ul.menu-list li img {
-      width: 48px;
-      height: 48px;
-      object-fit: cover;
-      border-radius: 6px;
-      flex-shrink: 0;
+    ul.menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.menu-list li {
+      padding: 15px;
+      border-bottom: 1px solid #e5e5e5;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+    ul.menu-list li:last-child {
+      border-bottom: none;
     }
 
     .item-info {
@@ -90,12 +97,23 @@
 
     .item-name {
       font-weight: bold;
+      font-size: 17px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .item-desc {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.45;
       display: block;
     }
 
     .item-price {
-      color: #444;
-      font-size: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #222;
+      white-space: nowrap;
     }
 
     @media (max-width: 480px) {
@@ -116,20 +134,16 @@
         font-size: 24px;
       }
 
-      ul.menu-list li {
+      .item-name {
         font-size: 16px;
-        padding: 10px;
-        flex-direction: column;
-        align-items: flex-start;
       }
 
-      ul.menu-list li img {
-        width: 40px;
-        height: 40px;
+      .item-desc {
+        font-size: 13px;
       }
 
-      .item-info {
-        width: 100%;
+      .item-price {
+        font-size: 15px;
       }
     }
   body

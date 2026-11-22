@@ -1,6 +1,7 @@
+
     body {
-      margin: 0; 
-      font-family: Arial, sans-serif; 
+      margin: 0;
+      font-family: Arial, sans-serif;
       background: #fff;
       color: #333;
       padding: 20px;
@@ -81,15 +82,19 @@
         font-size: 13px;
         padding: 8px 10px;
       }
+
       .brand {
         font-size: 20px;
       }
+
       .category {
         font-size: 14px;
       }
+
       h1.page-title {
         font-size: 24px;
       }
+
       ul.menu-list li {
         font-size: 14px;
       }
